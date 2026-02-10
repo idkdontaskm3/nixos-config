@@ -10,6 +10,7 @@ let
     src = "source /home/ryan/.bashrc";
     gm = "git commit -m";
     ga = "git add .";
+    gp = "git push -u origin main"
     ".." = "cd ..";
     "..." = "cd ../..";
   };
