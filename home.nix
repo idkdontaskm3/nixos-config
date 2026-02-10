@@ -4,7 +4,6 @@
   imports = [
     ./bash.nix
     ./packages.nix
-    ./hyprland.nix
   ];
 
   home.username = "ryan";

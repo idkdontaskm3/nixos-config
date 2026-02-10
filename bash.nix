@@ -8,6 +8,8 @@ let
     ex = "exit";
     dot = "cd ~/.dotfiles";
     src = "source /home/ryan/.bashrc";
+    gm = "git commit -m";
+    ga = "git add .";
     ".." = "cd ..";
     "..." = "cd ../..";
   };
