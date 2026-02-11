@@ -11,14 +11,18 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # LUKS Decryption
+  # --- Drive & Storage ---
   boot.initrd.luks.devices."luks-0acf8694-fcf9-4216-904a-652b8f7e56df".device = "/dev/disk/by-uuid/0acf8694-fcf9-4216-904a-652b8f7e56df";
+  boot.kernelParams = [ 
+  "nvme_core.default_ps_max_latency_us=0" 
+  "pcie_aspm=off"
+  ];
 
-  # Networking
+  # --- Networking ---
   networking.hostName = "craptop";
   networking.networkmanager.enable = true;
 
-  # Localization
+  # --- Localization ---
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
 
