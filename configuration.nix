@@ -26,7 +26,7 @@
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # --- Desktop Environment (Cinnamon) ---
+  # --- Desktop Environment ---
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
@@ -38,7 +38,6 @@
   services.printing.enable = true;
   hardware.bluetooth.enable = true;
   security.rtkit.enable = true;
-
   services.pipewire = {
     enable = true;
     alsa.enable = true;
