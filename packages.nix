@@ -9,6 +9,11 @@
     git
     gcc
     celluloid
+    unzip
+    protonvpn-gui
+    htop
+    ripgrep
+    ffmpeg
   ];
   nixpkgs.config.allowUnfree = true;
 }
