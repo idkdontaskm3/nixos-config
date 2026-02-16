@@ -58,7 +58,6 @@
   # --- System-Wide Packages ---
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
-    protonvpn-gui
     fwupd
     smartmontools
     cryptsetup
@@ -66,13 +65,8 @@
     dosfstools
     ntfs3g
     efibootmgr
-    _7zz
-    unzip
-    htop
     curl
     wget
-    ripgrep
-    ffmpeg
   ];
 
   system.stateVersion = "25.11";
