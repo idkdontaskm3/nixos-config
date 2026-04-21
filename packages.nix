@@ -15,6 +15,7 @@
     ripgrep
     ffmpeg
     lenovo-legion
+    ulauncher
   ];
 
   nixpkgs.config.allowUnfree = true;
