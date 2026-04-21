@@ -10,10 +10,11 @@
     gcc
     celluloid
     unzip
-    protonvpn-gui
+    proton-vpn
     htop
     ripgrep
     ffmpeg
+    lenovo-legion
   ];
 
   nixpkgs.config.allowUnfree = true;
