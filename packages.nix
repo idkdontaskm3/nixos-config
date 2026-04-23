@@ -16,7 +16,7 @@
     ffmpeg
     lenovo-legion
     ulauncher
+    qbittorrent
   ];
-
   nixpkgs.config.allowUnfree = true;
 }
