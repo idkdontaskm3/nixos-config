@@ -18,8 +18,6 @@
     ulauncher
     qbittorrent
     nvtopPackages.nvidia
-    lsfg-vk
-    lsfg-vk-ui
   ];
   nixpkgs.config.allowUnfree = true;
 }
