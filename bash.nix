@@ -6,6 +6,7 @@ let
     hm = "home-manager switch --flake .#ryan";
     cl = "clear";
     ex = "exit";
+    pls = "sudo !!";
     dot = "cd ~/.dotfiles";
     src = "source /home/ryan/.bashrc";
     gm = "git commit -m";
