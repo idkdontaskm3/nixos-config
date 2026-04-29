@@ -18,6 +18,7 @@
     ulauncher
     qbittorrent
     nvtopPackages.nvidia
+    android-tools
   ];
   nixpkgs.config.allowUnfree = true;
 }

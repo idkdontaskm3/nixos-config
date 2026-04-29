@@ -13,7 +13,7 @@ let
     ga = "git add .";
     gp = "git push -u origin main";
     rs = "sudo nixos-rebuild switch --flake .#craptop";
-    terarria = "NIXPKGS_ALLOW_UNFREE=1 FNA3D_FORCE_DRIVER=OpenGL __GL_THREADED_OPTIMIZATIONS=1 steam-run ~/GOG\\ Games/Terraria/start.sh";
+    terarria = "NIXPKGS_ALLOW_UNFREE=1 FNA3D_FORCE_DRIVER=OpenGL __GL_THREADED_OPTIMIZATIONS=1 steam-run ~/'GOG Games'/Terraria/game/Terarria";
     ".." = "cd ..";
     "..." = "cd ../..";
   };
