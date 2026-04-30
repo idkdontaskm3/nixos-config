@@ -43,9 +43,6 @@
     desktopManager.cinnamon.enable = true;
   };
 
-  services.displayManager.cosmic-greeter.enable = false;
-  services.desktopManager.cosmic.enable = true;
-
   # -- Networking & Localization --
   networking.hostName = "craptop";
   networking.networkmanager.enable = true;

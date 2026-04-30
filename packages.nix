@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [ 
+    plank
     libreoffice-fresh
     hunspell
     hunspellDicts.en-us
