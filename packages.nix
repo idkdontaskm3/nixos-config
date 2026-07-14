@@ -49,6 +49,7 @@
     ashell
     kicad
     jq
+    rpi-imager
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   programs.zen-browser.enable = true;
