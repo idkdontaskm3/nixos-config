@@ -1,5 +1,4 @@
 .env
 *.tmp
 *.log
-hardware-configuration.nix
 flake.lock
