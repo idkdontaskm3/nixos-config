@@ -2,9 +2,9 @@
 
 {
   imports = [
-    ./home/zsh.nix
-    ./home/packages.nix
-    ./home/fish.nix
+    ./zsh.nix
+    ./packages.nix
+    ./fish.nix
   ];
 
   home.username = "ryan";
