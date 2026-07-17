@@ -51,6 +51,7 @@
     jq
     rpi-imager
     gamemode
+    plank
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   programs.zen-browser.enable = true;
