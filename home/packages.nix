@@ -52,6 +52,7 @@
     rpi-imager
     gamemode
     plank
+    nwg-dock-hyprland
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   programs.zen-browser.enable = true;
