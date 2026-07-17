@@ -52,7 +52,7 @@ in
           owner = "b4b4r07";
           repo = "enhancd";
           rev = "master";
-          sha256 = "sha256-pKQbwiqE0KdmRDbHQcW18WfxyJSsKfymWt/TboY2iic="; # Updated with the live hash
+          sha256 = "sha256-pKQbwiqE0KdmRDbHQcW18WfxyJSsKfymWt/TboY2iic=";
         };
       }
       {
