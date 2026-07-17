@@ -5,6 +5,7 @@
   security.unprivilegedUsernsClone = false;
   security.apparmor.enable = true;
   security.apparmor.killUnconfinedConfinables = true;
+  systemd.services.apparmor.reloadTriggers = [];
 
   boot.kernel.sysctl = {
     "kernel.kptr_restrict" = 2;
