@@ -14,7 +14,12 @@ stdenv.mkDerivation {
   
   makeFlags = [ "KVER=${kernel.version}" "KSRC=${kernel.dev}/lib/modules/${kernel.version}/build" ];
   
+  buildPhase = ''
+    make ARCH=x86_64 CROSS_COMPILE= -C ${kernel.dev}/lib/modules/${kernel.version}/build M=$PWD modules
+  '';
+  
   installPhase = ''
-    install -Dm644 rtl8852au.ko $out/lib/modules/${kernel.version}/kernel/drivers/net/wireless/
+    mkdir -p $out/lib/modules/${kernel.version}/kernel/drivers/net/wireless/realtek/rtw89
+    install -m 644 8852au.ko $out/lib/modules/${kernel.version}/kernel/drivers/net/wireless/realtek/rtw89/
   '';
 }
