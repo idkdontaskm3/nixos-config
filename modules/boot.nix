@@ -32,6 +32,10 @@
     "pti=on"
   ];
 
+  boot.extraModulePackages = [
+    (pkgs.callPackage ./pkgs/rtl8852au.nix { kernel = config.boot.kernelPackages.kernel; }) 
+  ];
+
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
 }
