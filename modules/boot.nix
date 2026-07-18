@@ -27,6 +27,9 @@
     "nvme_core.default_ps_max_latency_us=0"
     "pcie_aspm=off"
     "nvidia-drm.modeset=1"
+    "slab_nomerge"
+    "slab_debug=P"
+    "pti=on"
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
