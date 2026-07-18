@@ -14,6 +14,7 @@
     ./modules/users.nix
     ./modules/programs.nix
     ./modules/packages.nix
+    ./pkgs/rtl8852au.nix
   ];
 
   system.stateVersion = "26.05";
