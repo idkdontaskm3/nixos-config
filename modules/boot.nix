@@ -33,7 +33,7 @@
   ];
 
   boot.extraModulePackages = [
-    (pkgs.callPackage ./pkgs/rtl8852au.nix { kernel = config.boot.kernelPackages.kernel; }) 
+    (pkgs.callPackage ../pkgs/rtl8852au.nix { kernel = config.boot.kernelPackages.kernel; }) 
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
