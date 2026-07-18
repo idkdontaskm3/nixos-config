@@ -10,7 +10,6 @@
     inputs@{
       self,
       nixpkgs,
-      nixpkgs-stable,
       home-manager,
       ...
     }:
@@ -25,11 +24,6 @@
           inherit system;
           modules = [ 
             ./configuration.nix
-            {
-              nixpkgs.overlays = [(final: prev: {
-                rtl8852au = nixpkgs-stable.legacyPackages.${system}.rtl8852au;
-              })];
-            }
           ];
         };
       };
