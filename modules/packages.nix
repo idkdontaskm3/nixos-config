@@ -20,5 +20,7 @@
     pulseaudio
     vulkan-tools
     vulkan-loader
+    linuxPackages.rtl8852au
+    linuxPackages.rtl8852au
   ];
 }
