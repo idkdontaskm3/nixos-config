@@ -7,7 +7,6 @@
   security.apparmor.killUnconfinedConfinables = true;
   security.lockKernelModules = true;
   security.forcePageTableIsolation = true;
-  security.selinux.enable = true;
   systemd.services.apparmor.reloadTriggers = [];
 
   boot.kernel.sysctl = {
