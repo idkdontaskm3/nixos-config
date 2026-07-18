@@ -8,7 +8,6 @@
   security.lockKernelModules = true;
   security.forcePageTableIsolation = true;
   security.selinux.enable = true;
-  security.audit.enable = true;
   systemd.services.apparmor.reloadTriggers = [];
 
   boot.kernel.sysctl = {
