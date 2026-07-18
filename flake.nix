@@ -1,6 +1,5 @@
 {
   description = "Flake";
-
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "nixpkgs/nixos-26.05";
@@ -8,11 +7,11 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
-
   outputs =
     inputs@{
       self,
       nixpkgs,
+      nixpkgs-stable,
       home-manager,
       ...
     }:
@@ -25,8 +24,14 @@
       nixosConfigurations = {
         craptop = lib.nixosSystem {
           inherit system;
-
-          modules = [ ./configuration.nix ];
+          modules = [ 
+            ./configuration.nix
+            {
+              nixpkgs.overlays = [(final: prev: {
+                rtl8852au = nixpkgs-stable.legacyPackages.${system}.rtl8852au;
+              })];
+            }
+          ];
         };
       };
       homeConfigurations = {
