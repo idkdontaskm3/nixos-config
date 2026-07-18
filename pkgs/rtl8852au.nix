@@ -14,8 +14,12 @@ stdenv.mkDerivation {
   
   makeFlags = [ "KVER=${kernel.version}" "KSRC=${kernel.dev}/lib/modules/${kernel.version}/build" ];
   
+  preBuild = ''
+    export KSRC=${kernel.dev}/lib/modules/${kernel.version}/build
+  '';
+
   buildPhase = ''
-    make ARCH=x86_64 CROSS_COMPILE= -C ${kernel.dev}/lib/modules/${kernel.version}/build M=$PWD modules
+    make ARCH=x86_64 CROSS_COMPILE= -C $KSRC M=$src EXTRA_CFLAGS="-I$src/include" modules
   '';
   
   installPhase = ''
