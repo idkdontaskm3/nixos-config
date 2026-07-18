@@ -19,7 +19,9 @@ stdenv.mkDerivation {
   '';
 
   buildPhase = ''
-    make ARCH=x86_64 CROSS_COMPILE= -C ${kernel.dev}/lib/modules/${kernel.version}/build M=. modules
+    cp -r ${kernel.dev}/lib/modules/${kernel.version}/build /tmp/kbuild
+    chmod -R u+w /tmp/kbuild
+    make ARCH=x86_64 CROSS_COMPILE= -C /tmp/kbuild M=$(pwd) modules
   '';
   
   installPhase = ''
