@@ -17,4 +17,4 @@ stdenv.mkDerivation {
   installPhase = ''
     install -Dm644 rtl8852au.ko $out/lib/modules/${kernel.version}/kernel/drivers/net/wireless/
   '';
-};
+}
