@@ -6,7 +6,7 @@ stdenv.mkDerivation {
     owner = "pulponair";
     repo = "rtl8852au";
     rev = "main";
-    sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    sha256 = "sha256-c2dpnZS6a0waL1khB9ZEglTwJIBsyRebTMig1B4A0xU=";
   };
   
   nativeBuildInputs = [ bc pkg-config ];
