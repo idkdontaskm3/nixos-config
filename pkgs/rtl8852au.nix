@@ -19,7 +19,7 @@ stdenv.mkDerivation {
   '';
 
   buildPhase = ''
-    make ARCH=x86_64 CROSS_COMPILE= -C $KSRC M=$src EXTRA_CFLAGS="-I$src/include" modules
+    make ARCH=x86_64 CROSS_COMPILE= -C ${kernel.dev}/lib/modules/${kernel.version}/build M=$(pwd) modules
   '';
   
   installPhase = ''
