@@ -55,6 +55,7 @@
     nwg-dock-hyprland
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
+  services.wayle.enable = true;
   programs.zen-browser.enable = true;
   nixpkgs.config.allowUnfree = true;
 }
