@@ -8,11 +8,6 @@
       enable = true;
       efiSupport = true;
       secureBoot.enable = true;
-      extraConfig = ''
-        :Password protected entry
-        COMMENT=Requires admin password to edit or boot
-        PASSWORD=0013067
-        '';
     };
   };
 
