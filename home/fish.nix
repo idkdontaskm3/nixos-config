@@ -20,6 +20,7 @@ let
     gc   = "git commit -m .";
     hypr = "cd ~/.config/hypr";
     conf = "cd ~/.config";
+    gf   = "ga && gc && gp &&";
     tung = "echo 'tung tung tung sahur'";
   };
 in
