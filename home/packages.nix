@@ -51,8 +51,7 @@
     jq
     rpi-imager
     gamemode
-    plank
-    nwg-dock-hyprland
+    brightnessctl
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
