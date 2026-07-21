@@ -5,7 +5,6 @@
   security.unprivilegedUsernsClone = false;
   security.apparmor.enable = true;
   security.apparmor.killUnconfinedConfinables = true;
-  security.lockKernelModules = true;
   security.forcePageTableIsolation = true;
   systemd.services.apparmor.reloadTriggers = [];
 
