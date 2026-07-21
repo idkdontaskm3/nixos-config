@@ -52,6 +52,8 @@
     rpi-imager
     gamemode
     brightnessctl
+    protonup-rs
+    protonup-qt
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
