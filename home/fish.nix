@@ -22,7 +22,7 @@ let
     conf = "cd ~/.config";
     gf   = "ga && gc && gp";
     tung = "echo 'tung tung tung sahur'";
-    hk   = "cd /home/ryan/Torrents/hk/data/noarch/game/ && gamemoderun steam-run env PROTON_ENABLE_NVAPI=1 ./Hollow\ Knight"
+    hk   = "cd /home/ryan/Torrents/hk/data/noarch/game/ && gamemoderun steam-run env PROTON_ENABLE_NVAPI=1 ./Hollow\ Knight";
   };
 in
 {
