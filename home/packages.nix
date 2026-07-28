@@ -54,6 +54,7 @@
     brightnessctl
     protonup-rs
     protonup-qt
+    dpkg
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
