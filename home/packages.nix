@@ -61,8 +61,6 @@
   services.wayle.enable = true;
   programs.zen-browser.enable = true;
   nixpkgs.config.allowUnfree = true;
-  programs.neovim = {
-    enable = true;
-    extraConfig = builtins.readFile ./nvim/init.lua;
-  };
+  programs.neovim.enable = false;
+  xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
 }
