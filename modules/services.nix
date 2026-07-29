@@ -28,6 +28,16 @@
     package = pkgs.ollama-vulkan;
   };
 
+  services.keyd = {
+    enable = true;
+    settings = {
+      main = {
+        capslock = "esc";
+        esc = "capslock";
+      };
+    };
+  };
+
   services.udev.extraRules = ''
     SUBSYSTEM=="platform", DRIVERS=="legion-laptop", MODE="0666"
     SUBSYSTEM=="hwmon", ATTRS{name}=="legion_laptop", MODE="0666"
