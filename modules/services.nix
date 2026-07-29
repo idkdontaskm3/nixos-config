@@ -30,10 +30,14 @@
 
   services.keyd = {
     enable = true;
-    settings = {
-      main = {
-        capslock = "esc";
-        esc = "capslock";
+    keyboards = {
+      default = {
+        settings = {
+          main = {
+            capslock = "esc";
+            esc = "capslock";
+          };
+        };
       };
     };
   };
