@@ -56,6 +56,7 @@
     protonup-qt
     dpkg
     glow
+    neovim
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
