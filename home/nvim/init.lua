@@ -10,6 +10,7 @@ vim.opt.expandtab = true
 vim.opt.cindent = true
 vim.opt.wrap = false
 vim.opt.cursorline = true
+vim.opt.clipboard = "unnamedplus"
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
