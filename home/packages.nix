@@ -55,6 +55,7 @@
     protonup-rs
     protonup-qt
     dpkg
+    glow
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   programs.neovim.enable = true;
