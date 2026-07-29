@@ -57,6 +57,8 @@
     dpkg
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
+  programs.neovim.enable = true;
+  programs.neovim.defaultEditor = true;
   services.wayle.enable = true;
   programs.zen-browser.enable = true;
   nixpkgs.config.allowUnfree = true;
