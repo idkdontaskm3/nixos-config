@@ -57,6 +57,7 @@
     dpkg
     glow
     neovim
+    gnome-shell
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
