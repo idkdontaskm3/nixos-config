@@ -58,6 +58,7 @@
     glow
     neovim
     gnome-shell
+    gh
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
