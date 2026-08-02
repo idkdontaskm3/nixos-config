@@ -59,6 +59,7 @@
     neovim
     gnome-shell
     gh
+    python3
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
