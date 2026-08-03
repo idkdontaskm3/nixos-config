@@ -2,66 +2,66 @@
 
 {
   home.packages = with pkgs; [
-    micro
-    nerd-fonts.fira-code
+    ags
+    android-tools
+    ashell
+    brightnessctl
+    cliphist
+    dpkg
+    ffmpeg
+    fzf
+    gamemode
+    gcc
+    gh
+    gimp
+    git
+    glow
+    gnome-shell
     gparted
-    libreoffice-fresh
     hunspell
     hunspellDicts.en-us
-    vscode
-    git
-    gcc
-    unzip
-    proton-vpn
-    ripgrep
-    ffmpeg
-    qbittorrent
-    nvtopPackages.nvidia
-    android-tools
-    fzf
-    waybar
-    rofi
-    hyprpolkitagent
-    hyprlock
     hypridle
+    hyprlock
     hyprpaper
+    hyprpolkitagent
     hyprshot
-    cliphist
-    pavucontrol
-    kitty
-    nwg-displays
-    mako
-    libnotify
-    wl-clipboard
-    wev
-    wlogout
-    lm_sensors
-    plank
-    quickshell
-    xwayland
     innoextract
-    gimp
-    solaar
+    ipscan
+    jq
+    kicad
+    kitty
+    libnotify
+    libreoffice-fresh
+    lm_sensors
+    mako
+    micro
+    neovim
+    nerd-fonts.fira-code
     nixfmt
+    nvtopPackages.nvidia
+    nwg-displays
+    pavucontrol
+    plank
+    proton-vpn
+    protonup-qt
+    protonup-rs
+    python3
+    qbittorrent
+    quickshell
+    ripgrep
+    rofi
+    rpi-imager
+    solaar
     steam
     steam-run
-    ags
-    ashell
-    kicad
-    jq
-    rpi-imager
-    gamemode
-    brightnessctl
-    protonup-rs
-    protonup-qt
-    dpkg
-    glow
-    neovim
-    gnome-shell
-    gh
-    python3
+    unzip
+    vscode
+    waybar
+    wev
     wireshark
-    ipscan
+    wl-clipboard
+    wlogout
+    xwayland
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
