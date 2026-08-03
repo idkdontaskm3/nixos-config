@@ -15,7 +15,6 @@
     gh
     gimp
     git
-    gitbutler
     glow
     gnome-shell
     gparted
