@@ -60,6 +60,8 @@
     gnome-shell
     gh
     python3
+    wireshark
+    ipscan
   ];
   imports = [ inputs.zen-browser.homeModules.default ];
   services.wayle.enable = true;
