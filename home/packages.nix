@@ -15,8 +15,6 @@
     gh
     gimp
     git
-    glow
-    gnome-shell
     gparted
     hunspell
     hunspellDicts.en-us
@@ -25,7 +23,6 @@
     hyprpaper
     hyprpolkitagent
     hyprshot
-    innoextract
     ipscan
     jq
     kicad
@@ -41,7 +38,6 @@
     nvtopPackages.nvidia
     nwg-displays
     pavucontrol
-    plank
     proton-vpn
     protonup-qt
     protonup-rs
@@ -50,15 +46,12 @@
     quickshell
     ripgrep
     rofi
-    rpi-imager
     solaar
     steam
     steam-run
     unzip
     vscode
-    waybar
     wev
-    wireshark
     wl-clipboard
     wlogout
     xwayland
