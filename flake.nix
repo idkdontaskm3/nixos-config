@@ -27,7 +27,7 @@
           modules = [ 
             ./configuration.nix
             {
-              nixpkgs.config,packageOverrides = pkgs: {
+              nixpkgs.config.packageOverrides = pkgs: {
                   glaze = glaze-stable.legacyPackages.${system}.glaze;
               };
             }
