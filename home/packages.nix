@@ -1,5 +1,4 @@
 { config, pkgs, inputs, ... }:
-
 {
   home.packages = with pkgs; [
     ags
@@ -31,7 +30,6 @@
     libreoffice-fresh
     lm_sensors
     mako
-    micro
     neovim
     nerd-fonts.fira-code
     nixfmt
