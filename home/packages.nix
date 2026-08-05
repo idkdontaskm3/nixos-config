@@ -18,11 +18,11 @@
     gparted
     hunspell
     hunspellDicts.en-us
-#    hypridle
-#    hyprlock
-#    hyprpaper
-#    hyprpolkitagent
-#    hyprshot
+    hypridle
+    hyprlock
+    hyprpaper
+    hyprpolkitagent
+    hyprshot
     ipscan
     jq
     kicad
