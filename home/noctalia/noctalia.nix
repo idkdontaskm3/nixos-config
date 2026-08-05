@@ -11,8 +11,8 @@
     settings = {
       theme = {
         mode = "dark";
-        #source = "builtin";
-        #builtin = "Catppuccin";
+        source = "builtin";
+        builtin = "Catppuccin";
       };
 
       wallpaper = {
