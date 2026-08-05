@@ -5,12 +5,14 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    glaze-stable.url = "github:NixOS/nixpkgs/nixos-26.05?dir=pkgs/by-name/gl/glaze";
   };
   outputs =
     inputs@{
       self,
       nixpkgs,
       home-manager,
+      glaze-stable,
       ...
     }:
     let
@@ -24,6 +26,11 @@
           inherit system;
           modules = [ 
             ./configuration.nix
+            {
+              nixpkgs.config,packageOverrides = pkgs: {
+                  glaze = glaze-stable.legacyPackages.${system}.glaze;
+              };
+            }
           ];
         };
       };
