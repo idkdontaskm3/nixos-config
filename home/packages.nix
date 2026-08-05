@@ -48,7 +48,7 @@
     steam
     steam-run
     unzip
-    vscode
+    vlc
     wev
     wl-clipboard
     wlogout
