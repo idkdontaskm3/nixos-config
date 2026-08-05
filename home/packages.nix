@@ -1,3 +1,6 @@
+{ config, pkgs, inputs, ... }:
+{
+  home.packages = with pkgs; [
     ags
     android-tools
     ashell
@@ -52,13 +55,10 @@
     wlogout
     xwayland
   ];
-  home.packages = with pkgs; [
   imports = [ inputs.zen-browser.homeModules.default ];
   nixpkgs.config.allowUnfree = true;
   programs.neovim.enable = false;
   programs.zen-browser.enable = true;
   services.wayle.enable = true;
   xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
-{
-{ config, pkgs, inputs, ... }:
 }
