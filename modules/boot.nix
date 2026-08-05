@@ -10,6 +10,10 @@
     };
   };
 
+  boot.extraModprobeConfig = ''
+      options iwlwifi power_save=0
+  '';
+
   boot.kernelModules = [
     "nvidia"
     "nvidia_modeset"
