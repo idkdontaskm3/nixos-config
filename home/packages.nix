@@ -33,7 +33,6 @@
     neovim
     nerd-fonts.fira-code
     nixfmt
-    noctalia
     nvtopPackages.nvidia
     nwg-displays
     pavucontrol
