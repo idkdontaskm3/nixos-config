@@ -20,6 +20,11 @@
       wallpaper = {
         enabled = false;
       };
+
+      mediaPlayer = {
+        enable = true;
+        player = "vlc";
+      };
     };
   };
 }
