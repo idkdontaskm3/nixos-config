@@ -9,8 +9,8 @@
 
   # hyprland patch, no longer needed when hyprland updates for glaze 8
 
-  nixpkgs.config.packageOverrides = pkgs; {
-    glaze = glaze-stable.legacyPackages.${system}.glaze:
+  nixpkgs.config.packageOverrides = pkgs: {
+    glaze = glaze-stable.legacyPackages.${system}.glaze;
   }  
 
   home.username = "ryan";
