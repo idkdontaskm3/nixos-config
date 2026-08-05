@@ -1,6 +1,3 @@
-{ config, pkgs, inputs, ... }:
-{
-  home.packages = with pkgs; [
     ags
     android-tools
     ashell
@@ -33,6 +30,7 @@
     neovim
     nerd-fonts.fira-code
     nixfmt
+    noctalia
     nvtopPackages.nvidia
     nwg-displays
     pavucontrol
@@ -54,10 +52,13 @@
     wlogout
     xwayland
   ];
+  home.packages = with pkgs; [
   imports = [ inputs.zen-browser.homeModules.default ];
-  services.wayle.enable = true;
-  programs.zen-browser.enable = true;
   nixpkgs.config.allowUnfree = true;
   programs.neovim.enable = false;
+  programs.zen-browser.enable = true;
+  services.wayle.enable = true;
   xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
+{
+{ config, pkgs, inputs, ... }:
 }
