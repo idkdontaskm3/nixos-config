@@ -36,6 +36,7 @@
     nvtopPackages.nvidia
     nwg-displays
     pavucontrol
+    playerctl
     proton-vpn
     protonup-qt
     protonup-rs
