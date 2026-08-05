@@ -37,7 +37,10 @@
       homeConfigurations = {
         ryan = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          extraSpecialArgs = { inherit inputs; };
+          extraSpecialArgs = { 
+            inherit inputs system;
+            glaze-stable = inputs.glaze-stable;
+          };
           modules = [ 
             ./home/home.nix
           ];
