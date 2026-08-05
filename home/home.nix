@@ -5,6 +5,7 @@
     ./zsh.nix
     ./packages.nix
     ./fish.nix
+    ./noctalia.nix
   ];
 
   # hyprland patch, no longer needed when hyprland updates for glaze 8

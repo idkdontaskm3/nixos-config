@@ -67,6 +67,7 @@ require("lazy").setup({
     end,
   },
   { "nvim-neo-tree/neo-tree.nvim", dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
+    dependencies = { "MunifTanjim/nui.nvim", ... }
     config = function()
       vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>")
     end,
