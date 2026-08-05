@@ -10,7 +10,6 @@
     inputs@{
       self,
       nixpkgs,
-      nixpkgs-master,
       home-manager,
       ...
     }:
