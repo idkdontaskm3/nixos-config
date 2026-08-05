@@ -10,13 +10,16 @@
     inputs@{
       self,
       nixpkgs,
+      nixpkgs-master,
       home-manager,
       ...
     }:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = nixpkgs.legacyPackages.${system}.appendOverlays [(final: prev: {
+        hyprland = nixpkgs-master.legacyPackages.${system}.hyprland;
+      })];
     in
     {
       nixosConfigurations = {
