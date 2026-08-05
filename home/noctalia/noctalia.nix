@@ -14,6 +14,8 @@
         source = "builtin";
         builtin = "Catppuccin";
       };
+      
+      opacity = 0.85;
 
       wallpaper = {
         enabled = false;
