@@ -48,6 +48,7 @@
     solaar
     steam
     steam-run
+    treefmt
     unzip
     vlc
     wev
