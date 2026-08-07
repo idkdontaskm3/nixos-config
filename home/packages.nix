@@ -45,6 +45,7 @@
     quickshell
     ripgrep
     rofi
+    smartmontools
     solaar
     steam
     steam-run
