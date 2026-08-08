@@ -5,6 +5,7 @@
     android-tools
     ashell
     brightnessctl
+    chromium
     cliphist
     dpkg
     ffmpeg
