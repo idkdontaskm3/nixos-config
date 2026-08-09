@@ -50,6 +50,7 @@
     solaar
     steam
     steam-run
+    supertuxkart
     treefmt
     unzip
     vlc
