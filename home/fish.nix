@@ -1,28 +1,29 @@
 { config, pkgs, ... }:
 let
   aliases = {
-    upd  = "sudo nix flake update";
-    hm   = "home-manager switch --flake .#ryan";
+    cl   = "clear";
+    conf = "cd ~/.config";
     dot  = "cd ~/.dotfiles";
+    ex   = "exit";
+    fih  = "watch -n 0 mpv /home/ryan/Videos/fih/fih.mp4";
+    ga   = "git add .";
+    gc   = "git commit -m .";
+    gf   = "ga && gc && gp";
     gm   = "git commit -m";
-    rs   = "sudo nixos-rebuild switch --flake .#craptop";
-    ls   = "lsd";
+    gp   = "git push";
+    hk   = "gamemoderun steam-run env PROTON_ENABLE_NVAPI=1 ./home/ryan/Torrents/hk/data/noarch/game/'Hollow Knight'";
+    hm   = "home-manager switch --flake .#ryan";
+    hypr = "cd ~/.config/hypr";
     l    = "ls -l";
     la   = "ls -a";
     lla  = "ls -la";
+    ls   = "lsd";
     lt   = "ls --tree";
-    src  = "source ~/.config/fish/config.fish";
     pls  = "sudo \$history[1]"; # Fixed: Added backslash to prevent Nix from crashing on '$history'
-    ex   = "exit";
-    cl   = "clear";
-    ga   = "git add .";
-    gp   = "git push";
-    gc   = "git commit -m .";
-    hypr = "cd ~/.config/hypr";
-    conf = "cd ~/.config";
-    gf   = "ga && gc && gp";
+    rs   = "sudo nixos-rebuild switch --flake .#craptop";
+    src  = "source ~/.config/fish/config.fish";
     tung = "echo 'tung tung tung sahur'";
-    hk   = "gamemoderun steam-run env PROTON_ENABLE_NVAPI=1 ./home/ryan/Torrents/hk/data/noarch/game/'Hollow Knight'";
+    upd  = "sudo nix flake update";
   };
 in
 {
