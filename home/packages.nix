@@ -31,6 +31,7 @@
     libreoffice-fresh
     lm_sensors
     mako
+    mpv
     neovim
     nerd-fonts.fira-code
     nixfmt
