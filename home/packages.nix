@@ -48,6 +48,7 @@
     ripgrep
     rofi
     smartmontools
+    scarab
     solaar
     steam
     steam-run
