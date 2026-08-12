@@ -55,6 +55,7 @@
     supertuxkart
     treefmt
     unzip
+    usbutils
     vlc
     wev
     wl-clipboard
