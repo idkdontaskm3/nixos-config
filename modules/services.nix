@@ -25,7 +25,7 @@
 
   services.ollama = {
     enable = true;
-    package = pkgs.ollama-vulkan;
+    package = pkgs.ollama-cuda;
   };
 
   services.keyd = {
