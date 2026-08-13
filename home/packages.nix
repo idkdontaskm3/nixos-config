@@ -30,6 +30,7 @@
     libnotify
     libreoffice-fresh
     lm_sensors
+    lumafly
     mako
     mpv
     neovim
