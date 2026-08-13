@@ -29,6 +29,7 @@
     kitty
     libnotify
     libreoffice-fresh
+    linux-wallpaperengine
     lm_sensors
     lumafly
     mako
