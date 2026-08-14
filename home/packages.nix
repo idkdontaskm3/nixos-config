@@ -34,6 +34,7 @@
     lumafly
     mako
     mpv
+    mtkclient
     neovim
     nerd-fonts.fira-code
     nixfmt
