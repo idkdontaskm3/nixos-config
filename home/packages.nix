@@ -33,6 +33,7 @@
     lm_sensors
     lumafly
     mako
+    metasploit
     mpv
     mtkclient
     neovim
