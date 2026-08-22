@@ -5,7 +5,19 @@
   security.rtkit.enable = true;
   services.fwupd.enable = true;
   services.flatpak.enable = true;
-  services.resolved.enable = true;
+
+  services.resolved = {
+    enable = true;
+    settings.Resolve = {
+      DNS = [
+        "45.90.28.0#19ef84.dns.nextdns.io"
+        "2a07:a8c0::#19ef84.dns.nextdns.io"
+        "45.90.30.0#19ef84.dns.nextdns.io"
+        "2a07:a8c1::#19ef84.dns.nextdns.io"
+      ];
+      DNSOverTLS = "yes";
+    };
+  };
 
   services.pipewire = {
     enable = true;
