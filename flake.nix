@@ -5,7 +5,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    glaze-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
+#   glaze-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
     noctalia.url = "github:noctalia-dev/noctalia";
   };
   outputs =
@@ -13,7 +13,7 @@
       self,
       nixpkgs,
       home-manager,
-      glaze-stable,
+#     glaze-stable,
       ...
     }:
     let
@@ -27,11 +27,11 @@
           inherit system;
           modules = [ 
             ./configuration.nix
-            {
-              nixpkgs.config.packageOverrides = pkgs: {
-                  glaze = glaze-stable.legacyPackages.${system}.glaze;
-              };
-            }
+#            {
+#              nixpkgs.config.packageOverrides = pkgs: {
+#                 glaze = glaze-stable.legacyPackages.${system}.glaze;
+#             };
+#           }
           ];
         };
       };
@@ -40,7 +40,7 @@
           inherit pkgs;
           extraSpecialArgs = { 
             inherit inputs system;
-            glaze-stable = inputs.glaze-stable;
+#           glaze-stable = inputs.glaze-stable;
           };
           modules = [ 
             ./home/home.nix
