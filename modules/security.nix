@@ -2,7 +2,6 @@
 
 {
   security.protectKernelImage = true;
-  security.unprivilegedUsernsClone = false;
   security.apparmor.enable = true;
   security.apparmor.killUnconfinedConfinables = true;
   security.forcePageTableIsolation = true;
