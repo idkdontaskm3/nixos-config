@@ -18,7 +18,7 @@
   };
 
   users.users.toruser = {
-    isSystemUser = false;
+    isNormalUser = true;
     description = "User for tor/ .onion related stuff";
     home = "/home/home/toruser";
     createHome = true;
