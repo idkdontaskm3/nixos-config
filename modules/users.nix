@@ -45,7 +45,6 @@
    blacklist /dev/shm
    blacklist /root
    read-only /
-   net tor
    dbus-system none
    dbus-user none
  '';
