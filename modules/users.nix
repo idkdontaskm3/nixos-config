@@ -46,7 +46,6 @@
    blacklist /root
    read-only /
    net tor
-   dns off
    dbus-system none
    dbus-user none
  '';
