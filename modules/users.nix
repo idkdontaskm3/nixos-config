@@ -17,26 +17,26 @@
     ];
   };
 
-  users.users.tor = {
+  users.users.toruser = {
     isSystemUser = false;
     description = "User for tor/ .onion related stuff";
-    home = "/home/home/tor";
+    home = "/home/home/toruser";
     createHome = true;
-    shell = pkgs.bashInteractive; # Changed from nologin to allow login
+    shell = pkgs.bashInteractive;
     uid = 1001;
-    group = "tor";
+    group = "toruser";
   };
 
-  users.groups.tor.gid = 1001;
+  users.groups.toruser.gid = 1001;
 
   systemd.tmpfiles.rules = [
-    "d /tmp/tmp 0700 tor tor - -"
-    "d /dev/shm/shm 0700 tor tor - -"
-    "f /home/home/tor/.bashrc 0600 tor tor - umask 0077"
+    "d /tmp/tmp 0700 toruse toruser - -"
+    "d /dev/shm/shm 0700 toruser toruser - -"
+    "f /home/home/tor/.bashrc 0600 toruser toruser - umask 0077"
   ];
 
-  environment.etc."firejail/tor.profile".text = ''
-   whitelist /home/home/tor
+  environment.etc."firejail/toruser.profile".text = ''
+   whitelist /home/home/toruser
    whitelist /tmp/tmp
    whitelist /dev/shm/shm
    whitelist /etc/systemd/resolved.conf
