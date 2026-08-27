@@ -37,6 +37,7 @@
 
   environment.etc."firejail/toruser.profile".text = ''
    whitelist /home/home/toruser
+   whitelist /home/home/toruser/.cache
    whitelist /tmp/tmp
    whitelist /dev/shm/shm
    whitelist /etc/systemd/resolved.conf
