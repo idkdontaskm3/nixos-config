@@ -5,6 +5,7 @@
   security.rtkit.enable = true;
   services.fwupd.enable = true;
   services.flatpak.enable = true;
+  services.tor.enable = true;
 
   services.resolved = {
     enable = true;
