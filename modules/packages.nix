@@ -20,5 +20,6 @@
     pulseaudio
     vulkan-tools
     vulkan-loader
+    tor-browser
   ];
 }
