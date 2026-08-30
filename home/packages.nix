@@ -34,7 +34,6 @@
     neovim
     nerd-fonts.fira-code
     nixfmt
-    nvtopPackages.nvidia
     nwg-displays
     pavucontrol
     playerctl
