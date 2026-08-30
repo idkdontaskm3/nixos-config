@@ -5,9 +5,7 @@
     android-tools
     ashell
     brightnessctl
-    chromium
     cliphist
-    dpkg
     ffmpeg
     fzf
     gamemode
@@ -18,8 +16,6 @@
     gparted
     hunspell
     hunspellDicts.en-us
-    hypridle
-    hyprlock
     hyprpaper
     hyprpolkitagent
     hyprshot
@@ -29,11 +25,9 @@
     kitty
     libnotify
     libreoffice-fresh
-    linux-wallpaperengine
     lm_sensors
     lumafly
     mako
-    metasploit
     mpv
     mtkclient
     neovim
@@ -49,15 +43,10 @@
     python3
     qbittorrent
     quickshell
-    ripgrep
     rofi
     smartmontools
-    scarab
-    solaar
     steam
     steam-run
-    supertuxkart
-    treefmt
     unzip
     usbutils
     vlc
@@ -70,6 +59,5 @@
   nixpkgs.config.allowUnfree = true;
   programs.neovim.enable = false;
   programs.zen-browser.enable = true;
-  services.wayle.enable = true;
   xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
 }
