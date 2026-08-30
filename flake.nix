@@ -6,7 +6,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    noctalia.url = "github:noctalia-dev/noctalia?rev=62bbfa1d229bf0351e8ac18d9bdfaeb5fb00fa9e;
+    noctalia.url = "github:noctalia-dev/noctalia?rev=62bbfa1d229bf0351e8ac18d9bdfaeb5fb00fa9e";
   };
   outputs =
     inputs@{
