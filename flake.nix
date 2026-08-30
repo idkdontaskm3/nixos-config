@@ -2,6 +2,7 @@
   description = "Flake";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -12,7 +13,7 @@
       self,
       nixpkgs,
       home-manager,
-#     glaze-stable,
+      chaotic,
       ...
     }:
     let
@@ -26,6 +27,7 @@
           inherit system;
           modules = [ 
             ./configuration.nix
+            chaotic.nixosModules.default
           ];
         };
       };

@@ -30,6 +30,6 @@
     "pti=on"
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_cachyos;
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
 }
