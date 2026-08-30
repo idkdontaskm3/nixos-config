@@ -28,6 +28,7 @@
     "slab_nomerge"
     "slab_debug=P"
     "pti=on"
+    "elevator=mq-deadline"
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
