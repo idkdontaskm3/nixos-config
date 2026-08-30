@@ -23,7 +23,7 @@ let
     rs   = "sudo nixos-rebuild switch --flake .#craptop";
     src  = "source ~/.config/fish/config.fish";
     tung = "echo 'tung tung tung sahur'";
-    upd  = "sudo nix flake update";
+    upd  = "nix flake update";
   };
 in
 {
