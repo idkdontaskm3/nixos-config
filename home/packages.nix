@@ -5,6 +5,7 @@
     android-tools
     ashell
     brightnessctl
+    cachix
     cliphist
     ffmpeg
     fzf

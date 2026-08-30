@@ -8,4 +8,13 @@
   };
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
+
+  nix.settings.substituters = [
+    "https://cache.nixos.org"
+    "https://cache.cachix.org"
+  ];
+  nix.settings.trusted-public-keys = [
+    ""
+    ""
+  ]
 }
