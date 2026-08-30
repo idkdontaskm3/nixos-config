@@ -25,7 +25,7 @@
     kicad
     kitty
     libnotify
-    libreoffice-fresh
+    libreoffice-stable
     lm_sensors
     lumafly
     mako
