@@ -13,8 +13,4 @@
     "https://cache.nixos.org"
     "https://cache.cachix.org"
   ];
-  nix.settings.trusted-public-keys = [
-    ""
-    ""
-  ]
 }
