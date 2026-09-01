@@ -9,7 +9,7 @@
 
   services.displayManager.sddm = {
       enable = true;
-      theme = "chili";
+      theme = "elarun";
   };
 
   programs.hyprland.enable = true;
