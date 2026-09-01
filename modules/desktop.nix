@@ -10,7 +10,7 @@
   services.displayManager.sddm = {
       enable = true;
       theme = "sugar-dark";
-      extraPackages = [ pkgs.sugar-dark ];
+      extraPackages = [ pkgs.sddm-sugar-dark ];
   };
 
   programs.hyprland.enable = true;
