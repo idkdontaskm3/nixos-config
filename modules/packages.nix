@@ -2,21 +2,22 @@
 
 {
   environment.systemPackages = with pkgs; [
-    smartmontools
-    cryptsetup
+    bibata-cursors
     btrfs-progs
+    cryptsetup
+    curl
+    dmidecode
     dosfstools
     efibootmgr
-    curl
-    wget
-    steam-run
-    pciutils
     mesa-demos
-    bibata-cursors
-    sbctl
-    dmidecode
+    pciutils
     pulseaudio
-    vulkan-tools
+    sbctl
+    sddm-sugar-dark
+    smartmontools
+    steam-run
     vulkan-loader
+    vulkan-tools
+    wget
   ];
 }
