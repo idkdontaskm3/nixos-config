@@ -10,7 +10,10 @@
   services.displayManager.sddm = {
       enable = true;
       theme = "sugar-dark";
-      extraPackages = [ pkgs.sddm-sugar-dark ];
+      extraPackages = with pkgs; [ 
+        sddm-sugar-dark
+        qt5.full
+      ];
       wayland.enable = true;
   };
 
