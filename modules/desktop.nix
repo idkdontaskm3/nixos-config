@@ -7,7 +7,7 @@
     desktopManager.cinnamon.enable = true;
   };
 
-  services.displayManager = {
+  services.displayManager.sddm = {
       enable = true;
       theme = "chili";
   };
