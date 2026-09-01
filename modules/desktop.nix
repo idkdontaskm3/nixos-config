@@ -11,6 +11,7 @@
       enable = true;
       theme = "sugar-dark";
       extraPackages = [ pkgs.sddm-sugar-dark ];
+      wayland.enable = true;
   };
 
   programs.hyprland.enable = true;
