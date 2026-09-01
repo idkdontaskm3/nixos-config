@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     ags
-    alacritty
     android-tools
     ashell
     brightnessctl
