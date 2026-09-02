@@ -13,11 +13,13 @@
     pciutils
     pulseaudio
     sbctl
-    sddm-sugar-dark
     smartmontools
     steam-run
     vulkan-loader
     vulkan-tools
     wget
+    (sddm-astronaut.override {
+       embeddedTheme = "purple_leaves";
+     })
   ];
 }

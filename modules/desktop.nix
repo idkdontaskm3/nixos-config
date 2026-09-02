@@ -9,9 +9,12 @@
 
   services.displayManager.sddm = {
       enable = true;
-      theme = "sugar-dark";
+      theme = "sddm-astronaut-theme";
       extraPackages = with pkgs; [ 
-        sddm-sugar-dark
+        kdePackages.qtmultimedia
+        (sddm-astronaut.override {
+           embeddedTheme = "purple_leaves";
+        })
       ];
       wayland.enable = true;
   };
