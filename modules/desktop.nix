@@ -12,7 +12,6 @@
       theme = "sugar-dark";
       extraPackages = with pkgs; [ 
         sddm-sugar-dark
-        qt5.full
       ];
       wayland.enable = true;
   };
